@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div id="first-container" class="container">
+      <div class="img-wrapper">
+        <img
+          src="./images/icon-star.svg"
+          alt="star-icon"
+          id="star-icon"
+          class="star-icon"
+        />
+      </div>
+      <div class="rating-description flex-col">
+        <h2 id="title" class="title">How did we do?</h2>
+        <p id="description" class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="btn-group flex-row">
+          <button id="1" class="btn" data-cell>1</button>
+          <button id="2" class="btn" data-cell>2</button>
+          <button id="3" class="btn" data-cell>3</button>
+          <button id="4" class="btn" data-cell>4</button>
+          <button id="5" class="btn" data-cell>5</button>
+        </div>
+        <button type="button" id="submit" class="submit-btn">Submit</button>
+      </div>
+    </div>
+    <div id="second-container" class="container hide">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="thank-you-icon"
+        id="thank-you-icon"
+        class="thank-you-icon"
+      />
+      <div class="flex-col rating-conclusion">
+        <p id="user-answer" class="user-answer"></p>
+        <h1 class="title">Thank you!</h1>
+        <p class="rating-conclusion__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

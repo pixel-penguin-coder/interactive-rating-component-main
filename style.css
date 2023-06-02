@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --lightgrey-color: hsl(217, 12%, 50%);
+  --dimgrey-color: hsl(216, 12%, 25%);
+  --darkblue-color: hsl(213, 19%, 13%);
+  --dark-color: hsl(216, 12%, 8%);
+  --font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility class */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: var(--font-size);
+  color: var(--white-color);
+  background-color: var(--dark-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 325px;
+  height: 350px;
+  background: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 20%),
+    var(--darkblue-color)
+  );
+  padding: 1.5rem;
+  border-radius: 10px;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.img-wrapper {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--dimgrey-color);
+  overflow: hidden;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.star-icon {
+  display: block;
+  width: 100%;
+}
+
+.rating-description {
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+  color: var(--lightgrey-color);
+}
+
+.btn-group {
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--dimgrey-color);
+  color: var(--lightgrey-color);
+}
+
+.btn:hover {
+  background-color: var(--lightgrey-color);
+  color: var(--white-color);
+}
+
+.clicked {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.submit-btn:hover {
+  background-color: hsl(25, 97%, 43%);
+}
+
+.submit-btn:active {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.thank-you-icon {
+  margin-top: 1rem;
+  display: block;
+  width: 50%;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.rating-conclusion {
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.rating-conclusion__description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--lightgrey-color);
+  line-height: 1.5;
+}
+
+.user-answer {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--dimgrey-color);
+  padding: 0.325rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 375px;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}

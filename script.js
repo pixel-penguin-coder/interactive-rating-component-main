@@ -26,7 +26,8 @@ function rate() {
 }
 
 function removeClicked() {
-  userRatingScore.forEach((button) => {
-    button.classList.remove("clicked");
-  });
+  const active = document.querySelector(".clicked");
+  if (active) {
+    active.classList.remove("clicked");
+  }
 }

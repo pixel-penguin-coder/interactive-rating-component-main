@@ -116,11 +116,6 @@ body {
   color: var(--white-color);
 }
 
-.clicked {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
-
 .submit-btn {
   margin-top: 1rem;
   background-color: var(--primary-color);
@@ -177,6 +172,11 @@ body {
   padding: 0.325rem 0.8rem;
   border-radius: 20px;
   margin-bottom: 1rem;
+}
+
+.clicked {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {

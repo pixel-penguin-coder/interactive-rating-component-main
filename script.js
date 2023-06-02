@@ -21,7 +21,7 @@ function submit() {
 function rate() {
   removeClicked();
   const rating = this.id;
-  this.classList.toggle("clicked");
+  this.classList.add("clicked");
   userAnswer.textContent = `You selected ${rating} out of 5`;
 }
 

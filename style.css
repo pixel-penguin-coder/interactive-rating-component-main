@@ -34,6 +34,11 @@
   visibility: hidden;
 }
 
+.clicked {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
 body {
   font-family: "Overpass", sans-serif;
   font-size: var(--font-size);
@@ -113,11 +118,6 @@ body {
 
 .btn:hover {
   background-color: var(--lightgrey-color);
-  color: var(--white-color);
-}
-
-.clicked {
-  background-color: var(--primary-color);
   color: var(--white-color);
 }
 

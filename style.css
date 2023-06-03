@@ -111,7 +111,8 @@ body {
   color: var(--lightgrey-color);
 }
 
-.btn:hover:active {
+.btn:hover,
+.btn:active {
   background-color: var(--lightgrey-color);
   color: var(--white-color);
 }
